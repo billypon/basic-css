@@ -1,0 +1,66 @@
+for $x in $css-box-size
+
+    .w{$x}p
+        width ($x)%
+
+    .h{$x}p
+        height ($x)%
+
+    .w{$x}pc
+        width unquote(s("calc(%s%)", $x))
+
+    .h{$x}pc
+        height unquote(s("calc(%s%)", $x))
+
+    .w{$x}pi
+        min-width ($x)%
+
+    .h{$x}pi
+        min-height ($x)%
+
+    .w{$x}pa
+        max-width ($x)%
+
+    .h{$x}pa
+        max-height ($x)%
+
+for $x in $css-box-space
+
+    .p{$x}
+        padding ($x)px
+
+    .m{$x}
+        margin ($x)px
+
+    .pt{$x}
+        padding-top ($x)px
+
+    .mt{$x}
+        margin-top ($x)px
+
+    .pr{$x}
+        padding-right ($x)px
+
+    .mr{$x}
+        margin-right ($x)px
+
+    .pb{$x}
+        padding-bottom ($x)px
+
+    .mb{$x}
+        margin-bottom ($x)px
+
+    .pl{$x}
+        padding-left ($x)px
+
+    .ml{$x}
+        margin-left ($x)px
+
+
+// box-sizing
+
+.bsb
+    box-sizing border-box
+
+.bsc
+    box-sizing content-box    

@@ -1,0 +1,10 @@
+for $x in $css-color
+    .b{$x}
+        border 1px solid unquote(s("#%s%s%s", $x, $x, $x))
+
+.br
+    border-radius 50%
+
+for $x in $css-radius
+    .br{$x}
+        border-radius ($x)px

@@ -1,0 +1,87 @@
+// font-size
+
+for $x in $css-font-size
+
+    .f{$x}
+        font-size ($x)px
+
+
+// font-style
+
+.b
+    font-weight bold
+
+.i
+    font-style italic
+
+.u
+    text-decoration underline
+
+.n
+    font-weight normal
+    font-style normal
+    text-decoration none
+
+
+// line-height
+
+.lhi
+    line-height inherit
+
+for $x in $css-line-height
+
+    .lh{$x}
+        line-height ($x)px
+
+
+// text-align
+
+.tc
+    text-align center
+
+.tl
+    text-align left
+
+.tr
+    text-align right
+
+.tj
+    text-align justify
+
+
+// vertical-align
+
+.vm
+    vertical-align middle
+
+.vt
+    vertical-align top
+
+.vb
+    vertical-align bottom
+
+.vtb
+    vertical-align text-bottom
+
+
+// white-space
+
+.nn
+    white-space normal
+
+.nw
+    white-space nowrap
+
+
+// word-wrap
+
+.bw
+    word-wrap break-word    // change line and break word at boundary
+
+
+// word-break
+
+.ka
+    word-break keep-all    // change line at punctuation and word space
+.ba
+    word-break break-all    // change line and break work at anywhere

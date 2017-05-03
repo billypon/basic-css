@@ -1,0 +1,17 @@
+{
+  "name": "basic-css",
+  "version": "1.0.0",
+  "description": "Some basic css definition",
+  "author": "billypon <billypon@gmail.com>",
+  "scripts": {
+    "build": "stylus -o dist/basic-css.css index.styl && stylus -o dist/basic-css.min.css -c -m index.styl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billypon/basic-css.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "stylus": "^0.54.5"
+  }
+}

@@ -1,0 +1,20 @@
+// position
+
+.pr
+    position relative
+
+.pa
+    position absolute
+
+.pf
+    position fixed
+
+for $x in $css-position
+    .t{$x}
+        top ($x)%
+    .r{$x}
+        right ($x)%
+    .b{$x}
+        bottom ($x)%
+    .l{$x}
+        left ($x)%

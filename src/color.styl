@@ -1,0 +1,7 @@
+for $x in $css-color
+
+    .c{$x}
+        color unquote(s("#%s%s%s", $x, $x, $x))
+
+    .bc{$x}
+        background-color unquote(s("#%s%s%s", $x, $x, $x))
