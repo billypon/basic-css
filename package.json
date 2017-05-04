@@ -4,7 +4,7 @@
   "description": "Some basic css definition",
   "author": "billypon <billypon@gmail.com>",
   "scripts": {
-    "build": "stylus -o dist/basic-css.css index.styl && stylus -o dist/basic-css.min.css -c -m index.styl"
+    "build": "bin/build"
   },
   "repository": {
     "type": "git",

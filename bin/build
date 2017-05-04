@@ -1,0 +1,4 @@
+#!/bin/bash
+
+node_modules/.bin/stylus --import reset.styl -o dist/basic-css.css index.styl &&
+node_modules/.bin/stylus --import reset.styl -o dist/basic-css.min.css -c -m index.styl
