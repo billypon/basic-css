@@ -2,22 +2,22 @@
 
 for $x in $css-font-size
 
-    .f{$x}
+    .font-{$x}
         font-size ($x)px
 
 
 // font-style
 
-.b
+.font-bold
     font-weight bold
 
-.i
+.font-italic
     font-style italic
 
-.u
+.font-underline
     text-decoration underline
 
-.n
+.font-normal
     font-weight normal
     font-style normal
     text-decoration none
@@ -25,63 +25,63 @@ for $x in $css-font-size
 
 // line-height
 
-.lhi
+.line-height
     line-height inherit
 
 for $x in $css-line-height
 
-    .lh{$x}
+    .line-height_{$x}
         line-height ($x)px
 
 
 // text-align
 
-.tc
+.align-center
     text-align center
 
-.tl
+.align-left
     text-align left
 
-.tr
+.align-right
     text-align right
 
-.tj
+.align-justify
     text-align justify
 
 
 // vertical-align
 
-.vm
+.valign-middle
     vertical-align middle
 
-.vt
+.valign-top
     vertical-align top
 
-.vb
+.valign-bottom
     vertical-align bottom
 
-.vtb
+.valign-text-bottom
     vertical-align text-bottom
 
 
 // white-space
 
-.nn
+.space-normal
     white-space normal
 
-.nw
+.space-nowrap
     white-space nowrap
 
 
 // word-wrap
 
-.bw
+.word-wrap_break
     word-wrap break-word    // change line and break word at boundary
 
 
 // word-break
 
-.ka
+.word-break_kepp
     word-break keep-all    // change line at punctuation and word space
-.ba
+.workd-break_break
     word-break break-all    // change line and break work at anywhere

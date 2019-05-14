@@ -1,10 +1,10 @@
 for $x in $css-color
-    .b{$x}
+    .border-{$x}
         border 1px solid unquote(s("#%s%s%s", $x, $x, $x))
 
-.br
+.radius-circle
     border-radius 50%
 
 for $x in $css-radius
-    .br{$x}
+    .radius-{$x}
         border-radius ($x)px
